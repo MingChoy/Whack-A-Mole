@@ -12,8 +12,12 @@ public class Mole : MonoBehaviour {
   [Header("GameManager")]
   [SerializeField] private GameManager gameManager;
 
-  // The offset of the sprite to hide it.
-  private Vector2 startPosition = new Vector2(0f, -2.56f);
+  [Header("GameManager")]
+  [SerializeField] private AudioSource MoleHatHit;
+  [SerializeField] private AudioSource MoleHit;
+
+    // The offset of the sprite to hide it.
+    private Vector2 startPosition = new Vector2(0f, -2.56f);
   private Vector2 endPosition = Vector2.zero;
   // How long it takes to show a mole.
   private float showDuration = 0.5f;
